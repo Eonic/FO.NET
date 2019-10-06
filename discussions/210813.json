@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "436359",
+    "ThreadId": "210813",
+    "Html": "<p>Hi,</p>\r\n<p>Currently which version of XSL-FO (1.0 or 1.1) is being supported by FO.NET?</p>\r\n<p>Is there any plan to support for the next versions?</p>\r\n<p>Regards,</p>\r\n<p>Vinoth</p>\r\n<p>28-Apr-2010</p>",
+    "PostedDate": "2010-04-28T00:54:26.617-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "531117",
+    "ThreadId": "210813",
+    "Html": "\r\n<p>Hello</p>\r\n<p>FO.NET supports a subset of XSL-FO 1.0.</p>\r\n<p>FO.NET was based on FOP 0.20.4 and has nearly identical coverage of XSL-FO 1.0 as that specific version of FOP.</p>\r\n<p>FO.NET is not being actively developed or supported - I am simply too busy!&nbsp; If anybody is interested in developing it further then please let me know.</p>\r\n<p>Mark</p>\r\n",
+    "PostedDate": "2010-12-04T06:39:55.71-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

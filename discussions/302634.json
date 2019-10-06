@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "751775",
+    "ThreadId": "302634",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>is there a way how to reduce size of generated PDF? I generate pdf with 5 pages, 10 small images and the size of pdf is about 2MB.</p>\r\n<p>Thanks for help.</p>\r\n<p>Ales</p>\r\n",
+    "PostedDate": "2012-02-10T02:54:12.63-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1241369",
+    "ThreadId": "302634",
+    "Html": "Try this to <a href=\"http://www.yiigo.com/guides/vbnet/how-to-compress-pdf-image.shtml\" rel=\"nofollow\">compress PDF</a> documents and reduce file size.<br />\n",
+    "PostedDate": "2014-05-04T19:45:10.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

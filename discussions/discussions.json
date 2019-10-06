@@ -1,0 +1,407 @@
+[
+  {
+    "Id": "46758",
+    "Title": "XSLT to PDF using FO.Net",
+    "LatestDate": "2009-04-08T17:40:00.173-07:00"
+  },
+  {
+    "Id": "51441",
+    "Title": "System.ArithmeticException",
+    "LatestDate": "2009-06-08T10:28:49.777-07:00"
+  },
+  {
+    "Id": "52754",
+    "Title": "XSL-FO to PDF",
+    "LatestDate": "2009-06-08T10:27:24.593-07:00"
+  },
+  {
+    "Id": "53381",
+    "Title": "FO.NET for Mono...",
+    "LatestDate": "2009-06-08T10:26:31.967-07:00"
+  },
+  {
+    "Id": "53834",
+    "Title": "Features that isn't implemented",
+    "LatestDate": "2010-04-20T01:25:28.167-07:00"
+  },
+  {
+    "Id": "54908",
+    "Title": "FO.NET does not yet support Unicode characters",
+    "LatestDate": "2012-08-21T11:12:05.7-07:00"
+  },
+  {
+    "Id": "56882",
+    "Title": "One step xsl:fo transformation / pdf render",
+    "LatestDate": "2009-05-20T03:14:03.18-07:00"
+  },
+  {
+    "Id": "57159",
+    "Title": "Create PDF/A 1-a",
+    "LatestDate": "2009-06-09T11:00:49.527-07:00"
+  },
+  {
+    "Id": "58840",
+    "Title": "FonetDriver.Render MemoryStream",
+    "LatestDate": "2010-12-20T13:47:21-08:00"
+  },
+  {
+    "Id": "64861",
+    "Title": "fo:basic-link for URLs not working",
+    "LatestDate": "2011-04-12T14:39:21.097-07:00"
+  },
+  {
+    "Id": "66175",
+    "Title": "Unknown formatting object adobe:ns:meta",
+    "LatestDate": "2009-08-18T00:48:43.31-07:00"
+  },
+  {
+    "Id": "69129",
+    "Title": "FONET out of memory error",
+    "LatestDate": "2013-11-01T07:57:24.867-07:00"
+  },
+  {
+    "Id": "69159",
+    "Title": "FO.Net UNICODE Characters",
+    "LatestDate": "2009-09-16T13:37:27.117-07:00"
+  },
+  {
+    "Id": "70544",
+    "Title": "FO.NET error in column % width",
+    "LatestDate": "2009-10-05T08:18:59.477-07:00"
+  },
+  {
+    "Id": "72241",
+    "Title": "FO.NET don't create a footnote-separator",
+    "LatestDate": "2014-10-15T14:40:05.543-07:00"
+  },
+  {
+    "Id": "77038",
+    "Title": "List not showing numbers",
+    "LatestDate": "2009-12-03T13:47:40.543-08:00"
+  },
+  {
+    "Id": "78468",
+    "Title": "FO.net with Silverlight",
+    "LatestDate": "2009-12-17T10:01:35.49-08:00"
+  },
+  {
+    "Id": "204341",
+    "Title": "System.IO.IOException: The process cannot access the file because it is being used by another process.",
+    "LatestDate": "2010-03-09T09:22:34.387-08:00"
+  },
+  {
+    "Id": "207944",
+    "Title": "Compact Framework compatibility",
+    "LatestDate": "2010-03-31T08:44:36.34-07:00"
+  },
+  {
+    "Id": "210536",
+    "Title": "TTB paradigm",
+    "LatestDate": "2010-04-26T02:41:36.747-07:00"
+  },
+  {
+    "Id": "210813",
+    "Title": "Support of XSL-FO version",
+    "LatestDate": "2010-12-04T06:39:55.71-08:00"
+  },
+  {
+    "Id": "212754",
+    "Title": "System.InvalidCastException",
+    "LatestDate": "2010-06-04T03:37:54.59-07:00"
+  },
+  {
+    "Id": "215227",
+    "Title": "System.SystemException: At least one of minimum, optimum, or maximum IPD",
+    "LatestDate": "2011-06-19T23:21:53.097-07:00"
+  },
+  {
+    "Id": "215488",
+    "Title": "text-shadow not showing",
+    "LatestDate": "2010-12-04T06:37:33.2-08:00"
+  },
+  {
+    "Id": "216208",
+    "Title": "Problem with FO.NET tables",
+    "LatestDate": "2012-11-28T01:08:02.737-08:00"
+  },
+  {
+    "Id": "223447",
+    "Title": "preventing page break before table.",
+    "LatestDate": "2012-07-31T10:34:47.373-07:00"
+  },
+  {
+    "Id": "223809",
+    "Title": "Use with encoding=\"ISO-8859-8\"?",
+    "LatestDate": "2010-12-04T06:33:32.25-08:00"
+  },
+  {
+    "Id": "228873",
+    "Title": "Header/Footer overlaping",
+    "LatestDate": "2010-12-04T06:29:17.253-08:00"
+  },
+  {
+    "Id": "231336",
+    "Title": "Base64 encoded images",
+    "LatestDate": "2011-07-18T10:19:25.027-07:00"
+  },
+  {
+    "Id": "243184",
+    "Title": "Azure and External Images",
+    "LatestDate": "2011-08-05T01:50:22.433-07:00"
+  },
+  {
+    "Id": "246889",
+    "Title": "FO.NET and vertical text and/or word wrapping",
+    "LatestDate": "2011-02-22T23:29:03.053-08:00"
+  },
+  {
+    "Id": "247125",
+    "Title": "Form Fields?",
+    "LatestDate": "2011-02-22T14:03:38.873-08:00"
+  },
+  {
+    "Id": "260550",
+    "Title": "FO.NET Multi Threading",
+    "LatestDate": "2011-10-17T10:57:34.353-07:00"
+  },
+  {
+    "Id": "262452",
+    "Title": "System.OutOfMemoryException",
+    "LatestDate": "2011-08-05T01:46:38.367-07:00"
+  },
+  {
+    "Id": "265561",
+    "Title": "SVG Namespace",
+    "LatestDate": "2011-08-05T01:44:53.433-07:00"
+  },
+  {
+    "Id": "265673",
+    "Title": "Image With Transparent background",
+    "LatestDate": "2011-08-05T01:42:30.47-07:00"
+  },
+  {
+    "Id": "266709",
+    "Title": "FO.NET \"XSL FO to PDF Error \"",
+    "LatestDate": "2011-08-05T01:41:14.667-07:00"
+  },
+  {
+    "Id": "267851",
+    "Title": "how to convert HTML to XSL-FO",
+    "LatestDate": "2011-08-05T03:45:01.43-07:00"
+  },
+  {
+    "Id": "270599",
+    "Title": "fox:external-document problem",
+    "LatestDate": "2011-10-17T11:54:14.403-07:00"
+  },
+  {
+    "Id": "273126",
+    "Title": "disable/suppress warning, info, debug message",
+    "LatestDate": "2011-09-22T01:44:36.14-07:00"
+  },
+  {
+    "Id": "273329",
+    "Title": "<fo:table-column column-width=\"NaNin\"/>",
+    "LatestDate": "2011-10-17T11:52:11.403-07:00"
+  },
+  {
+    "Id": "275484",
+    "Title": "Custom footer (xsl-region-after) for last page",
+    "LatestDate": "2011-11-03T10:51:43.673-07:00"
+  },
+  {
+    "Id": "287088",
+    "Title": "How to embed subset of ttf fonts using FO net instead of entire font program?",
+    "LatestDate": "2012-01-23T21:08:29.417-08:00"
+  },
+  {
+    "Id": "287172",
+    "Title": "How to use emf images with  <fo:external-graphic ?",
+    "LatestDate": "2012-01-23T21:57:56.333-08:00"
+  },
+  {
+    "Id": "302634",
+    "Title": "Compression of PDF",
+    "LatestDate": "2014-05-04T19:45:10.45-07:00"
+  },
+  {
+    "Id": "317773",
+    "Title": "Porting from Apache FOP",
+    "LatestDate": "2012-02-16T02:48:20.49-08:00"
+  },
+  {
+    "Id": "350672",
+    "Title": "Error Msg",
+    "LatestDate": "2012-03-30T10:18:57.94-07:00"
+  },
+  {
+    "Id": "352521",
+    "Title": "Pdf document with more than 250 pages",
+    "LatestDate": "2012-04-17T00:55:29.193-07:00"
+  },
+  {
+    "Id": "353647",
+    "Title": "Overlapping problem",
+    "LatestDate": "2012-04-25T23:47:48.42-07:00"
+  },
+  {
+    "Id": "357878",
+    "Title": "Upload File to Sftp",
+    "LatestDate": "2012-05-31T10:29:46.873-07:00"
+  },
+  {
+    "Id": "359045",
+    "Title": "Convert XML to PDF?",
+    "LatestDate": "2015-07-06T07:21:55.613-07:00"
+  },
+  {
+    "Id": "377470",
+    "Title": "Preventing page break table ",
+    "LatestDate": "2012-07-31T09:26:32.323-07:00"
+  },
+  {
+    "Id": "391090",
+    "Title": "message d'erreurs",
+    "LatestDate": "2012-08-10T17:41:06.957-07:00"
+  },
+  {
+    "Id": "392566",
+    "Title": "prevent table from being spread out over 2 pages",
+    "LatestDate": "2012-08-22T00:32:10.12-07:00"
+  },
+  {
+    "Id": "393358",
+    "Title": "Preventing page break in table cell does not work",
+    "LatestDate": "2012-08-28T07:21:59.203-07:00"
+  },
+  {
+    "Id": "395364",
+    "Title": "Should Fonet.Pdf.Gdi.GdiDeviceContent Use ReleaseDC instead of DeleteDC?",
+    "LatestDate": "2012-09-12T20:22:07.297-07:00"
+  },
+  {
+    "Id": "395418",
+    "Title": "Can FO.Net sign the PDF document it will generate?",
+    "LatestDate": "2012-09-13T07:35:26.403-07:00"
+  },
+  {
+    "Id": "396215",
+    "Title": "Error in build",
+    "LatestDate": "2012-09-20T03:54:48.813-07:00"
+  },
+  {
+    "Id": "405794",
+    "Title": "Size of PDF: how to reduce PDF size?",
+    "LatestDate": "2012-12-06T03:16:07.917-08:00"
+  },
+  {
+    "Id": "429894",
+    "Title": "FO.NET on Azure?",
+    "LatestDate": "2013-01-19T04:43:22.143-08:00"
+  },
+  {
+    "Id": "449008",
+    "Title": "CurrentState",
+    "LatestDate": "2013-07-04T14:56:00.98-07:00"
+  },
+  {
+    "Id": "449167",
+    "Title": "Separate styles in CSS and use them with FO",
+    "LatestDate": "2013-07-08T01:47:25.817-07:00"
+  },
+  {
+    "Id": "450824",
+    "Title": "Page number within page sequence",
+    "LatestDate": "2013-07-22T08:59:12.877-07:00"
+  },
+  {
+    "Id": "452230",
+    "Title": "Creating PDF documents with WCF and FO.NET",
+    "LatestDate": "2013-08-02T06:32:35.327-07:00"
+  },
+  {
+    "Id": "454897",
+    "Title": "Default input memory stream size",
+    "LatestDate": "2013-08-29T11:23:11.077-07:00"
+  },
+  {
+    "Id": "472020",
+    "Title": "Invalid URI exception",
+    "LatestDate": "2013-12-06T04:48:37.593-08:00"
+  },
+  {
+    "Id": "524705",
+    "Title": "Failed to retrieve table data for font Arial",
+    "LatestDate": "2014-01-24T08:59:55.517-08:00"
+  },
+  {
+    "Id": "531528",
+    "Title": "Using FONET in a Medium Trust Environment",
+    "LatestDate": "2014-02-12T07:48:13.55-08:00"
+  },
+  {
+    "Id": "538270",
+    "Title": "margin gets ignored",
+    "LatestDate": "2014-03-10T03:22:52.15-07:00"
+  },
+  {
+    "Id": "551010",
+    "Title": "Not asked for password while opening the pdf file",
+    "LatestDate": "2014-07-09T03:19:07.83-07:00"
+  },
+  {
+    "Id": "554318",
+    "Title": "Encountered unexpected exception while fetching image from exception",
+    "LatestDate": "2016-03-31T02:46:51.603-07:00"
+  },
+  {
+    "Id": "565078",
+    "Title": "Unable to retrieve unicode ranges",
+    "LatestDate": "2014-09-03T07:04:41.973-07:00"
+  },
+  {
+    "Id": "571247",
+    "Title": "Support for <fo:bookmark-tree>",
+    "LatestDate": "2014-11-04T03:32:59.087-08:00"
+  },
+  {
+    "Id": "572159",
+    "Title": " <fo:block text-align=\"justify\"> dont work?",
+    "LatestDate": "2014-11-15T08:10:42.143-08:00"
+  },
+  {
+    "Id": "581393",
+    "Title": "XSL-FO discontinued - Future of project",
+    "LatestDate": "2015-02-19T08:15:24.377-08:00"
+  },
+  {
+    "Id": "653765",
+    "Title": "BizTalk pipelinecomponent",
+    "LatestDate": "2016-04-19T23:28:41.023-07:00"
+  },
+  {
+    "Id": "654500",
+    "Title": "But I don't like tags",
+    "LatestDate": "2016-05-16T02:47:47.567-07:00"
+  },
+  {
+    "Id": "654926",
+    "Title": "Text outside block area exception occuring",
+    "LatestDate": "2016-05-25T05:11:00.8-07:00"
+  },
+  {
+    "Id": "660936",
+    "Title": "Conformance of FO.NET",
+    "LatestDate": "2017-01-25T08:59:42.34-08:00"
+  },
+  {
+    "Id": "663617",
+    "Title": "PdfRendererOptions.FontType = FontType.Subset (font-weight problem)",
+    "LatestDate": "2017-08-16T09:55:34.24-07:00"
+  },
+  {
+    "Id": "663855",
+    "Title": "Blank page rendered",
+    "LatestDate": "2017-10-06T06:23:00.77-07:00"
+  }
+]

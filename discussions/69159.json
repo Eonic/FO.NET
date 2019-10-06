@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "235314",
+    "ThreadId": "69159",
+    "Html": "<p>Trying to great a fo:list-item-label as follows...</p>\r\n<p>&nbsp;</p>\r\n<p>&lt;fo:list-item-label end-indent=&quot;label-end()&quot; text-align=&quot;right&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;fo:block font-family=&quot;Courier&quot;&gt;&amp;#x2022;&lt;/fo:block&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/fo:list-item-label&gt;</p>\r\n<p>it renders well in Apache FOP, but I get a ? aligned all the way to the right of the page where is should be the bullet char.&nbsp; Also, any #x160; (space) chars also are the ?.&nbsp; Do I have to set the font set somewhere?</p>\r\n<p>&nbsp;</p>\r\n<p>Regards</p>",
+    "PostedDate": "2009-09-16T13:37:27.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

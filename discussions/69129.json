@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "235216",
+    "ThreadId": "69129",
+    "Html": "<p>HI am using Fonet to generate pdfs from an xml file and an xsl file. This has been working fine for small xml files however I have encountered a larger than normal xml record adn the result is that processing takes an age and eventually times out and throws the following error:</p>\r\n<p>System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.<br>&nbsp;&nbsp; at Fonet.Fo.FOText.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.Block.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.TableCell.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.TableRow.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.AbstractTableBody.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.Table.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.Block.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.TableCell.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.TableRow.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.AbstractTableBody.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.Table.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.Flow.Layout(Area area, Region region)<br>&nbsp;&nbsp; at Fonet.Fo.Flow.Flow.Layout(Area area)<br>&nbsp;&nbsp; at Fonet.Fo.Pagination.PageSequence.Format(AreaTree areaTree)<br>&nbsp;&nbsp; at Fonet.StreamRenderer.Render(PageSequence pageSequence)<br>&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.EndElement()<br>&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)</p>\r\n<p>The pdf does not contain any graphics. Any help or advice you can give would be much appreciated.</p>",
+    "PostedDate": "2009-09-16T09:18:16.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "235515",
+    "ThreadId": "69129",
+    "Html": "I have found the cause of this issue. It was caused by content spanning over pages and a wrongly set Keep-together=&quot;Always&quot;\r\nThanks for your time",
+    "PostedDate": "2009-09-17T04:02:19.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "248927",
+    "ThreadId": "69129",
+    "Html": "<p>DecMac,</p>\r\n<p>&lt;Quote&gt;HI am using Fonet to generate pdfs from an xml file and an xsl file.&lt;/Quote&gt;</p>\r\n<p>Can I ask how you are using FO.NET to do the above as I can't find a way to specify and Input XML and an Input XSL file?</p>",
+    "PostedDate": "2009-10-23T02:48:54.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "249233",
+    "ThreadId": "69129",
+    "Html": "<p>ok in your aspx page code behind create something like</p>\r\n<p>protected void Page_Load(object sender, EventArgs e)<br>&nbsp;&nbsp;&nbsp; {</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XmlDocument xml = new XmlDocument();</p>\r\n<p>//get or create your xml somehow and also the xslfile name</p>\r\n<p>//at this stage I have already created these and added them to the session cache so I have something like</p>\r\n<p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xml = (XmlDocument)Session[&quot;CRXML&quot;];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string xslFile = (string)Session[&quot;xslFile&quot;];<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; byte[] getBytes;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getBytes = PDFGenerator.StreamPDF(xml, Server.MapPath(xslFile));<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (Exception ec)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; throw;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Clear();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.AddHeader(&quot;Accept-Header&quot;, getBytes.Length.ToString());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.ContentType = &quot;application/pdf&quot;;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.OutputStream.Write(getBytes, 0, Convert.ToInt32(getBytes.Length));<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Flush();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try { Response.End(); }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch { }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br><br>&nbsp;&nbsp;&nbsp; }</p>\r\n<p>Then create a class like so</p>\r\n<p>public class PDFGenerator<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static byte[] StreamPDF(XmlDocument objSourceData, string XSLTFile)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XslCompiledTransform xslt = new XslCompiledTransform();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xslt.Load(XSLTFile);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MemoryStream ms = new MemoryStream();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xslt.Transform(objSourceData, null, ms);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MemoryStream output = new MemoryStream();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; XmlDocument doc = new XmlDocument();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ms.Position = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; doc.Load(ms);<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Set options of the PDF document<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PdfRendererOptions options = new PdfRendererOptions();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; options.EnableAdd = false;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; options.EnableCopy = false;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; options.EnableModify = false;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; options.Title = &quot;some title&quot;;<br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Create the pdf<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FonetDriver driver = FonetDriver.Make();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; driver.Options = options;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; driver.Render(doc, output);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return output.ToArray();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; }</p>\r\n<p>&nbsp;</p>\r\n<p>HTH</p>\r\n<p>Declan</p>",
+    "PostedDate": "2009-10-24T01:37:45.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "249630",
+    "ThreadId": "69129",
+    "Html": "<p>Declan,</p>\r\n<p>Although I am not using ASP.NET ( WinForms ) your code sample fills in the missing info that I need.</p>\r\n<p>Many thanks,</p>\r\n<p>Martin</p>",
+    "PostedDate": "2009-10-26T01:25:49.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1116541",
+    "ThreadId": "69129",
+    "Html": "Regarding the original post, I am also getting a problem with keep-together='always' when the content's height is more than the page height.  The Fo.Net code enters an infinite loop.\r<br />\n<br />\nThe w3c standard states that for keep-together='always', the renderer should raise an overflow error.  However, I require it to actually continue to render the rest of the row/table on the subsequent page.  Anyone got any ideas on how to do this?\r<br />\n<br />\nI don't mind modifying the Fo.Net code, if someone can give me a pointer.\r<br />\n<br />\nThanks in advance.\r<br />\n<br />\nKevin<br />\n",
+    "PostedDate": "2013-11-01T07:57:24.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

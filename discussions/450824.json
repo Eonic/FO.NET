@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1071383",
+    "ThreadId": "450824",
+    "Html": "A have a document with multiple page-sequences: a main document and additional attachments.\r<br />\n<br />\nIs it possible to add region-after content in FO.NET that will display:<br />\n<ul>\n<li>current page number within the current page-sequence (not the entire document)</li>\n<li>total page count of the current page-sequence (not the entire document)</li>\n</ul>\n",
+    "PostedDate": "2013-07-22T08:59:12.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

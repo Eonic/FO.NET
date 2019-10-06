@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "729273",
+    "ThreadId": "287088",
+    "Html": "\r\n<p>I am using FO net to generate PDF document in my application.</p>\r\n<p>I am using FO net version of 1.0.3318.11064.</p>\r\n<p>We are using &quot;Helvetica&quot; font family in our PDF document. &nbsp;Now I would like to bind subset of the fonts to my generated PDF document, how to do that?</p>\r\n<p>Basically I want to do the following,</p>\r\n<p>FonetDriver driver = FonetDriver.Make(); &nbsp; &nbsp;</p>\r\n<p>driver.Options = new Fonet.Render.Pdf.PdfRendererOptions();&nbsp;&nbsp; &nbsp;</p>\r\n<p>driver.Options.FontType = Fonet.Render.Pdf.FontType.Embedded;&nbsp;&nbsp; &nbsp;</p>\r\n<p>driver.Render(&quot;C:\\\\temp\\\\fonet.fo&quot;, &quot;c:\\\\temp\\\\fonet.pdf&quot;);&nbsp;</p>\r\n<p>Here, I would like to use&nbsp;Fonet.Render.Pdf.FontType.Subset instead of&nbsp;Fonet.Render.Pdf.FontType.Embedded!!</p>\r\n<p>If I use Subset, I am getting following error,</p>\r\n<p>System.ArgumentException: Cannot locate table 'cvt ' Parameter name: tableName at Fonet.Pdf.Gdi.Font.FontFileReader.GetTable(String tableName) at Fonet.Pdf.Gdi.Font.FontSubset.Generate(MemoryStream output) at Fonet.Render.Pdf.Fonts.Type2CIDSubsetFont.get_FontData()\r\n at Fonet.Pdf.PdfFontCreator.CreateCIDFont(String pdfFontID, Font font, CIDFont cidFont) at Fonet.Pdf.PdfFontCreator.MakeFont(String pdfFontID, Font font) at Fonet.Render.Pdf.FontSetup.AddToResources(PdfFontCreator fontCreator, PdfResources resources) at Fonet.Render.Pdf.PdfRenderer.StopRenderer()\r\n at Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)</p>\r\n<p>Please reply me ASAP. Thanks in Advance.</p>\r\n",
+    "PostedDate": "2012-01-23T05:55:15.42-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "729710",
+    "ThreadId": "287088",
+    "Html": "<p>Can anyone at least tell me, is&nbsp;<span>Fonet.Render.Pdf.FontType.Subset supported by FONET?</span></p>",
+    "PostedDate": "2012-01-23T21:08:29.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

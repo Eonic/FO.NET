@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1132161",
+    "ThreadId": "472020",
+    "Html": "I've now copied this into the ISSUES section as I've had no reply...<br />\n<br />\nI am calling FonetDriver.Render with an input MemoryStream containing the fo:root XML and expecting to get a rendered PDF in the output Stream. But I'm getting an exception instead:<br />\n<br />\nSystem.UriFormatException occurred<br />\n  HResult=-2146233033<br />\n  Message=Invalid URI: The hostname could not be parsed.<br />\n  Source=System<br />\n  StackTrace:<br />\n<pre><code>   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)\n</code></pre>\n\n... I can't see what URI it might be worried about apart from the input XML does have an image embedded like this:<br />\n<pre><code>      &lt;fo:external-graphic src=&quot;url('file://http://mywebsite.co.uk/mylogo.gif')&quot;/&gt;\n</code></pre>\n\n... However that gif is definitely accessible (not actual uri shown btw).<br />\n<br />\nHere's the VB code I am using to call Render():<br />\n<br />\nDim output As System.IO.MemoryStream = New System.IO.MemoryStream<br />\nDim driver As Fonet.FonetDriver = Fonet.FonetDriver.Make()<br />\ndriver.CloseOnExit = False<br />\ninput.Position = 0<br />\ndriver.Render(input, output)<br />\n<br />\n... this last line gives the exception.<br />\n<br />\nAny help gratefully received.<br />\n<br />\nThanks, J<br />\n",
+    "PostedDate": "2013-12-05T07:13:59.71-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1132467",
+    "ThreadId": "472020",
+    "Html": "The answer is that the image URI should not contain &quot;file://&quot;.<br />\n",
+    "PostedDate": "2013-12-06T04:48:37.593-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2013-12-06T04:48:40.993-08:00"
+  }
+]

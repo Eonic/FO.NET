@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "682712",
+    "ThreadId": "275484",
+    "Html": "\r\n<div id=\"gt-res-content\">\r\n<div><span id=\"result_box\" lang=\"en\"><span>Hi,</span> <span>I</span> <span>tried to generate</span>\r\n<span>footers</span> <span>for the last page</span> <span>of my document</span><span>, but it seems</span>\r\n<span>that this</span> <span>rendering</span> <span>does not run</span><span>,</span>\r\n<span>I&nbsp;tried</span> <span>with</span> <span>xalan</span> (<span>java)</span>\r\n<span>and working properly</span><span>, I leave the</span> <span>template example</span><span>:</span><br>\r\n</span></div>\r\n<p>&nbsp;&lt;?xml version=&quot;1.0&quot;?&gt;<br>\r\n&lt;fo:root xmlns:fo=&quot;<a href=\"http://www.w3.org/1999/XSL/Format\">http://www.w3.org/1999/XSL/Format</a>&quot;&gt;<br>\r\n&nbsp;&lt;fo:layout-master-set&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:simple-page-master master-name=&quot;first&quot; page-height=&quot;297mm&quot; page-width=&quot;210mm&quot; margin-top=&quot;20mm&quot; margin-bottom=&quot;20mm&quot; margin-left=&quot;25mm&quot; margin-right=&quot;25mm&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:region-body margin-bottom=&quot;20mm&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:region-after region-name=&quot;footer-first&quot; extent=&quot;20mm&quot;/&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:simple-page-master&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:simple-page-master master-name=&quot;rest&quot; page-height=&quot;297mm&quot; page-width=&quot;210mm&quot; margin-top=&quot;20mm&quot; margin-bottom=&quot;20mm&quot; margin-left=&quot;25mm&quot; margin-right=&quot;25mm&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:region-body margin-bottom=&quot;20mm&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:region-after region-name=&quot;footer-rest&quot; extent=&quot;20mm&quot;/&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:simple-page-master&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:simple-page-master master-name=&quot;last&quot; page-height=&quot;297mm&quot; page-width=&quot;210mm&quot; margin-top=&quot;20mm&quot; margin-bottom=&quot;20mm&quot; margin-left=&quot;25mm&quot; margin-right=&quot;25mm&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:region-body margin-bottom=&quot;20mm&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:region-after region-name=&quot;footer-last&quot; extent=&quot;20mm&quot;/&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:simple-page-master&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:page-sequence-master master-name=&quot;document&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:repeatable-page-master-alternatives&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&lt;fo:conditional-page-master-reference page-position=&quot;first&quot; master-reference=&quot;first&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&lt;fo:conditional-page-master-reference page-position=&quot;rest&quot; master-reference=&quot;rest&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&lt;fo:conditional-page-master-reference page-position=&quot;last&quot; master-reference=&quot;last&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;/fo:repeatable-page-master-alternatives&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:page-sequence-master&gt;<br>\r\n&nbsp;&lt;/fo:layout-master-set&gt;<br>\r\n&nbsp;&lt;fo:page-sequence master-reference=&quot;document&quot;&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:static-content flow-name=&quot;footer-first&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:block text-align=&quot;center&quot;&gt;First page.-&lt;fo:page-number/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;/fo:block&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:static-content&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:static-content flow-name=&quot;footer-rest&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:block text-align-last=&quot;center&quot;&gt;Other page.-&lt;fo:page-number/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;/fo:block&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:static-content&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:static-content flow-name=&quot;footer-last&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:block text-align-last=&quot;center&quot;&gt;Last page.-&lt;fo:page-number/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;/fo:block&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:static-content&gt;<br>\r\n&nbsp;&nbsp;&lt;fo:flow flow-name=&quot;xsl-region-body&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:block/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&lt;fo:block break-before=&quot;page&quot;/&gt;<br>\r\n&nbsp;&nbsp;&lt;/fo:flow&gt;<br>\r\n&nbsp;&lt;/fo:page-sequence&gt;<br>\r\n&lt;/fo:root&gt;<br>\r\n<br>\r\n<span>Thank you</span> <span>in what&nbsp;you</span> <span>can support.</span></p>\r\n</div>\r\n",
+    "PostedDate": "2011-10-11T10:57:41.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "685348",
+    "ThreadId": "275484",
+    "Html": "<p>Hi</p>\r\n<p>Unfortunately page-position=\"last\" is not supported in FO.NET. This is a limitation of the way FO.NET works in a single pass - it does not know if the page is the last one until way after the page master has been chosen.</p>\r\n<p>Sorry I can't help!</p>\r\n<p>Mark</p>",
+    "PostedDate": "2011-10-17T11:49:54.267-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "693464",
+    "ThreadId": "275484",
+    "Html": "<p>Thanks Mark, i made a \"patra&ntilde;a\", i don't know how says it in english :P, and insert new page at end.</p>",
+    "PostedDate": "2011-11-03T10:51:43.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "481355",
+    "ThreadId": "223809",
+    "Html": "I use &lt;?xml version=&quot;1.0&quot;  encoding=&quot;ISO-8859-8&quot;?&gt;\r\n&lt;fo:root xmlns:fo=&quot;http://www.w3.org/1999/XSL/Format&quot;&gt;\r\n\r\n  &lt;fo:layout-master-set&gt;\r\n    &lt;fo:simple-page-master master-name=&quot;simple&quot;\r\n                  page-height=&quot;29.7cm&quot;\r\n                  page-width=&quot;21cm&quot;\r\n                  margin-top=&quot;1cm&quot;\r\n                  margin-bottom=&quot;2cm&quot;\r\n                  margin-left=&quot;2.5cm&quot;\r\n                  margin-right=&quot;2.5cm&quot;&gt;\r\n      &lt;fo:region-body margin-top=&quot;3cm&quot;/&gt;\r\n      &lt;fo:region-before extent=&quot;3cm&quot;/&gt;\r\n      &lt;fo:region-after extent=&quot;1.5cm&quot;/&gt;\r\n    &lt;/fo:simple-page-master&gt;\r\n  &lt;/fo:layout-master-set&gt;\r\n\r\n  &lt;fo:page-sequence master-reference=&quot;simple&quot;&gt;\r\n    &lt;fo:flow flow-name=&quot;xsl-region-body&quot;&gt;\r\n      &lt;fo:block font-size=&quot;18pt&quot; color=&quot;black&quot; text-align=&quot;center&quot;&gt;\r\n       שלום לך dfsdfshfmsdfv\r\n      &lt;/fo:block&gt;\r\n\t  \r\n\r\n    &lt;/fo:flow&gt;\r\n  &lt;/fo:page-sequence&gt;\r\n\r\n&lt;/fo:root&gt; \r\nbecause  the language is hebrew  , but on pdf i see #####.\r\nWhat I can do ?",
+    "PostedDate": "2010-08-17T05:22:04.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "531115",
+    "ThreadId": "223809",
+    "Html": "\r\n<p>Hello</p>\r\n<p>You need to do two things in order to get Hebrew characters to display:</p>\r\n<p>1) You need to specify a font using the font-family attribute.&nbsp; The font obviously needs to support the characters you are using.</p>\r\n<p>2) You need to either subset or embed the font.</p>\r\n<p>See <a href=\"http://fonet.codeplex.com/wikipage?title=Font%20Linking%2c%20Embedding%20and%20Subsetting&referringTitle=Section%204%3a%20Font%20Support\" target=\"_blank\">\r\nhere </a>for more details.</p>\r\n<p>Mark</p>\r\n",
+    "PostedDate": "2010-12-04T06:33:32.25-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

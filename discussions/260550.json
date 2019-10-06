@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "624453",
+    "ThreadId": "260550",
+    "Html": "\r\n<p>Hi everybody.</p>\r\n<p>I&acute;ve worked with NFOP is a great option, but there have a problem, multi threading is not supported.</p>\r\n<p>Do you know if FO.NET could be used in multi threading?</p>\r\n<p>I'm new with &nbsp;this library.</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2011-06-07T15:55:04.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "624627",
+    "ThreadId": "260550",
+    "Html": "<p>Hi</p>\r\n<p>I remember that we fixed some bugs regarding multi-threading when the product was known as Apoc. I think you will be OK, but cannot guarantee it.</p>\r\n<p>Cheers<br />Mark</p>",
+    "PostedDate": "2011-06-08T03:36:56.1-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "624737",
+    "ThreadId": "260550",
+    "Html": "<p>Thanks Mark, i&acute;ll make a stress test to try it and i'll let you know.</p>\r\n<p>kind regards</p>",
+    "PostedDate": "2011-06-08T07:03:43.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "643464",
+    "ThreadId": "260550",
+    "Html": "<blockquote style=\"padding-bottom: 0px; font-style: italic; margin: 0.25em 1em 0px; padding-left: 0.25em; padding-right: 0.25em; padding-top: 0px; border: #ccc 0.1em solid;\"><strong>artguedo wrote:</strong><br />\r\n<p>Thanks Mark, i&acute;ll make a stress test to try it and i'll let you know.</p>\r\n<p>kind regards</p>\r\n</blockquote>\r\n<p>Any results yet that you could share on your stress test? - Thanks', Wolfgang</p>",
+    "PostedDate": "2011-07-17T10:09:17.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "682708",
+    "ThreadId": "260550",
+    "Html": "<p>Hi Wolfgang, i've&nbsp;made the stress test and it works fine in multi-threading.</p>\r\n<p>My hardware is:</p>\r\n<p>Windows2008R2 x64 (Virtual Machine with VirtualBox)<br />2GB RAM<br />2 Procesors</p>\r\n<p>XML fetched from MSSQLServer<br />XSL fetched from MSSQLServer and keep in memory</p>\r\n<p>Class called in WS (asmx)</p>\r\n<p>Stress with SOAP-UIx64<br />5 min<br />10 users<br />10 threads</p>\r\n<p>Total 724 PDF's, two images in each page, 5 pages per PDF. Near of 2.4 files per second.</p>\r\n<p>Regards</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-10-11T10:48:58.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "685315",
+    "ThreadId": "260550",
+    "Html": "<p>Thanks for posting your results! Very helpful.</p>",
+    "PostedDate": "2011-10-17T10:57:34.353-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

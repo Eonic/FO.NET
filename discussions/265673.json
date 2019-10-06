@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "644129",
+    "ThreadId": "265673",
+    "Html": "\r\n<p>Should FO.Net be able to place an image with a transparent background into a PDF?</p>\r\n",
+    "PostedDate": "2011-07-18T23:08:47.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "652908",
+    "ThreadId": "265673",
+    "Html": "<p>You could try using a JPEG. There is some special handling for JPEG images that may allow the transparency to be passed through to the PDF. Sorry for the vagueness, but it has been a long time since I worked with FO.NET myself.</p>",
+    "PostedDate": "2011-08-05T01:42:30.47-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

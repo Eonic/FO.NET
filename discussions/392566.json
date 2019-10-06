@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "902384",
+    "ThreadId": "392566",
+    "Html": "\r\n<p>HI ALl,</p>\r\n<p>I have searched the internet and this site for a solution on how to avoid a page break inside a table but everything I find does not seem to work.</p>\r\n<p>In the 0.20.xx version of apache FOP keep-with-next on a table row should be implemented but somehow I can't get it to work reliably.</p>\r\n<p>This is what I have so far:</p>\r\n<p>&nbsp;</p>\r\n<pre>&lt;fo:table table-layout=&quot;fixed&quot; width=&quot;100%&quot;&gt;\r\n  &lt;fo:table-column column-width=&quot;proportional-column-width(1)&quot;/&gt;\r\n  &lt;fo:table-body&gt;\r\n    &lt;fo:table-row keep-with-next=&quot;always&quot;&gt;\r\n      &lt;fo:table-cell&gt;\r\n        &lt;fo:block&gt;\r\n          some header<br>&nbsp;       &lt;/fo:block&gt;\r\n      &lt;/fo:table-cell&gt;\r\n    &lt;/fo:table-row&gt;\r\n    &lt;fo:table-row&gt;\r\n      &lt;fo:table-cell&gt;\r\n        &lt;fo:block&gt;<br>          some text spread out over multiple rows <pre>         &lt;fo:block&gt; &lt;/fo:block&gt;<br>         using the fo block so act similar to the html &lt;br /&gt;</pre>\r\n&lt;/fo:block&gt;       &lt;/fo:table-cell&gt;     &lt;/fo:table-row&gt;   &lt;/fo:table-body&gt; &lt;/fo:table&gt;<br><br>How can I make sure that this table is not broken to span more than one page?<br><br>Kind regards,<br><br>Ed<br></pre>\r\n",
+    "PostedDate": "2012-08-22T00:32:10.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

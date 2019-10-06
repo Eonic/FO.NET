@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "673889",
+    "ThreadId": "273126",
+    "Html": "\r\n<p>How to disable/suppress warning, info, debug message when I run a program? here is my code:</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FonetDriver driver = FonetDriver.Make();<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; driver.Render(&quot;../../BY_MONTH_129186.fo&quot;, &quot;../../BY_MONTH_129186.pdf&quot;);</p>\r\n<p>&nbsp;</p>\r\n<p>here is out put:</p>\r\n<p>[INFO] Building formatting object tree<br>\r\n[WARN] Will ignore TrueType font 'Symbol' because a base 14 font with the same n<br>\r\name already exists.<br>\r\n[INFO] [1]<br>\r\n[WARN] Sum of fixed column widths 530000 greater than maximum specified IPD 5160<br>\r\n00<br>\r\n[WARN] Area contents overflows area<br>\r\n[WARN] Area contents overflows area<br>\r\n[WARN] Area contents overflows area<br>\r\n[WARN] Area contents overflows area<br>\r\n[WARN] Area contents overflows area<br>\r\n[WARN] Area contents overflows area<br>\r\n[WARN] Area contents overflows area<br>\r\n[INFO] Last page-sequence produced 1 page(s).<br>\r\n[INFO] Parsing of document complete, stopping renderer</p>\r\n<p>&nbsp;</p>\r\n<p>I don't want these message display when I run the program because it will effect my web page out put.</p>\r\n<p>&nbsp;</p>\r\n<p>-Henry</p>\r\n",
+    "PostedDate": "2011-09-19T14:16:38.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "675152",
+    "ThreadId": "273126",
+    "Html": "<p>Hello</p>\r\n<p>If you add a handler to the OnError, OnWarning and OnInfo handlers, then FO.NET will not output to the console and will instead assume that you have notified the end-user in some other way.</p>\r\n<p>See FonetDriver.cs methods FireFonetError, FireFonetWarning and FireFonetInfo.</p>\r\n<p><a href=\"http://fonet.codeplex.com/SourceControl/changeset/view/69243#167196\">http://fonet.codeplex.com/SourceControl/changeset/view/69243#167196</a></p>\r\n<p>Mark</p>",
+    "PostedDate": "2011-09-22T01:44:36.14-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

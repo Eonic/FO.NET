@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "643716",
+    "ThreadId": "265561",
+    "Html": "<p>Hello,</p>\n<p>Fantastic&nbsp;lib!! If only you had more time..</p>\n<p>&nbsp;I'm curious as to how hard it would be to modify source to&nbsp;integrate the svg or (other) namespaces e.g altova? And what would be involved.</p>\n<p>Thanks</p>\n<p>&nbsp;</p>",
+    "PostedDate": "2011-07-18T07:35:38.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "652910",
+    "ThreadId": "265561",
+    "Html": "<p>Thanks! The original FOP 0.20.4 code did have an \"extension\" mechanism. It would probably take a few days to implement something similar and then an unknown amount of time for each extension.</p>",
+    "PostedDate": "2011-08-05T01:44:53.433-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

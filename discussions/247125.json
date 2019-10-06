@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "570411",
+    "ThreadId": "247125",
+    "Html": "\r\n<p>Is there any way to create a form field using FO.NET?</p>\r\n<p>I am trying to use FO.NET to create a PDF form that the user can fill out.</p>\r\n<p>I need checkboxes, radio buttons, and textboxes.</p>\r\n<p>I have searched until the end of google, yes, the entire end!</p>\r\n<p>Found 100% nothing.</p>\r\n<p>any help would be great.</p>\r\n<p>Thanks!</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-02-22T13:23:46.497-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "570441",
+    "ThreadId": "247125",
+    "Html": "<p>Hi</p>\r\n<p>There is no way to do this with FO.NET. I seem to remember a FOP extension for doing this, so you might be able to find some code samples in Java that could be ported to FO.NET.</p>\r\n<p>Non-FO solutions are something else to look at. For example itextsharp will probably do form fields (or commercial components such as aspose).</p>\r\n<p>Hope this helps</p>\r\n<p>Mark</p>",
+    "PostedDate": "2011-02-22T13:57:25.923-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "570449",
+    "ThreadId": "247125",
+    "Html": "<p>Thanks for your quick reply.</p>\r\n<p>I have been unable to find a solution in iTextSharp.</p>\r\n<p>I have found other solutions, at a cost.</p>\r\n<p>I will continue to search. If you happen to find anything on that FOP extension, please let me know.</p>\r\n<p>Thanks again, this project is really nice.</p>\r\n<p>-Shane</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-02-22T14:03:38.873-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "156341",
+    "ThreadId": "46758",
+    "Html": "Hi, your project its great.<br>\r\nBut<br>\r\nIm trying to create a pdf using a  XSTL that has WordML &quot;markup&quot;,<br>\r\n<br>\r\n¿Do you have some idea about how to get a PDF, using FO.NET?<br>\r\n<br>\r\nThanks<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2009-02-10T11:09:19.193-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "157161",
+    "ThreadId": "46758",
+    "Html": "Hi<br>\r\n<br>\r\nI have not really ever studied WordML, but I know it is just XML so in theory it should be possible to process it using XSLT and create XSL:FO.  This would require you to write an XSLT stylesheet to convert from one vocabulary to the next.  I have no doubt that WordML will not map 100% to the features supported by FO.NET, so it is likely that you will have to compromise here or there.<br>\r\n<br>\r\nIn a nutshell, yes it sounds possible, no it is not supported already in FO.NET, it will likely take a significant effort.  Sorry I can't be of more help.<br>\r\n<br>\r\nMark\r\n",
+    "PostedDate": "2009-02-12T11:56:55.937-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "177415",
+    "ThreadId": "46758",
+    "Html": "Moved to new discussion thread.... \r\n",
+    "PostedDate": "2009-04-08T17:40:00.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

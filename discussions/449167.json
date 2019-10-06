@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1064930",
+    "ThreadId": "449167",
+    "Html": "Hello,\r<br />\n<br />\nI am new to FO.NET. I got to a deadend when trying to remove styles from XSLT file and putting them in a CSS.  There isn't much on Internet either except this forum.\r<br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2013-07-05T09:31:55.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1065478",
+    "ThreadId": "449167",
+    "Html": "Hello\r<br />\n<br />\nFO.NET does not support CSS - so I don't really understand the question. There are some XSL:FO to HTML tools out there, so perhaps that is what you should look for?\r<br />\n<br />\nFO.NET supports XSL:FO to PDF only.\r<br />\n<br />\nCheers\r<br />\nMark<br />\n",
+    "PostedDate": "2013-07-08T01:47:25.817-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

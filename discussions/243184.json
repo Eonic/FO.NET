@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "554905",
+    "ThreadId": "243184",
+    "Html": "\r\n<p>A note for anyone wanting to use&nbsp;images&nbsp;FO.NET with Azure:</p>\r\n<p>Local Storage uses brackets in the directory name which results in images not being found. I have tracked it down the this piece of code:</p>\r\n<p>if (href.StartsWith(&quot;url(&quot;) &amp;&amp; (href.IndexOf(')') != -1)) <br>\r\n{<br>\r\nhref = href.Substring(4, href.IndexOf()') - 4).Trim(); <br>\r\n}</p>\r\n<p>in Fonet.Image.UriSpecificationParser.ParseUri. This chops off the end of the path name after the bracket, and consequently the image isn't found.</p>\r\n",
+    "PostedDate": "2011-01-25T02:26:10.22-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "652917",
+    "ThreadId": "243184",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://fonet.codeplex.com/workitem/7000\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-08-05T01:50:22.433-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

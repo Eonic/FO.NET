@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "199287",
+    "ThreadId": "58840",
+    "Html": "<p>How is the best way to use the FonetDriver.Render to write to a MemoryStream?&nbsp; I open a test file, from an ASP page.I keep getting a closed stream returned.&nbsp; I am trying to render a PDF to memory.&nbsp; Any help would be most appreciated.</p>\r\n<p>Thanks,</p>\r\n<p>Pete</p>",
+    "PostedDate": "2009-06-08T16:53:16.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199298",
+    "ThreadId": "58840",
+    "Html": "<p>Never mind.&nbsp; I downloaded the source and tweaked the driver to leave the stream open...</p>",
+    "PostedDate": "2009-06-08T18:10:31.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "538494",
+    "ThreadId": "58840",
+    "Html": "\r\n<p>Set&nbsp; <strong>CloseOnExit&nbsp;=&nbsp;<span style=\"color:blue\">false</span>;</strong>&nbsp; so that it keeps the Memorystream open. Default&nbsp; value is\r\n<strong>true</strong></p>\r\n<p>&nbsp;</p>\r\n<p>I hope this is of help.<strong>&nbsp;</strong></p>\r\n<p>&nbsp;</p>\r\n<p>Amir<strong><br>\r\n</strong></p>\r\n",
+    "PostedDate": "2010-12-20T13:47:21-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

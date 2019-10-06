@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "192258",
+    "ThreadId": "56882",
+    "Html": "<p>C# .net 2.0</p>\r\n<p>Hi,</p>\r\n<p>I'm struggling to get my code working and would appreciate any help you can give me.</p>\r\n<p>I have a .fo file which I can render to pdf no problem when I use the actual file from the file system and change the content type to 'Application/pdf', however, when I use the output from an xsl transformation within the code, and use that to generate an in-memory .fo, I get a .net error: &quot;<em>System.SystemException: Unknown formatting object  http://www.w3.org/1999/xsl/format^root</em>&quot;.</p>\r\n<p>The thing is, when I write the in-memory .fo to the screen, and compare with the .fo from the file system, they're identical, so really stumped how to fix this.</p>\r\n<p>&nbsp;</p>\r\n<p>Many thanks for any tips,</p>\r\n<p>Paul</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-05-20T01:55:20.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "192277",
+    "ThreadId": "56882",
+    "Html": "<p>UPDATE:</p>\r\n<p>I realised that I had two xmlns for fo in the xsl stylesheet.&nbsp; Once I removed that, I moved on a step.</p>\r\n<p>My issue now is that whilst the pdf data is written to the screen, I've changed the content type to pdf so it should be opening _as_ a pdf, but it isn't.&nbsp; If I save the page asa .pdf and open in a pdf reader, it's a perfectly valid pdf document, so I'm obviously missing something fundamental...</p>\r\n<p>&nbsp;</p>\r\n<p>Ta</p>",
+    "PostedDate": "2009-05-20T02:33:07.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "192293",
+    "ThreadId": "56882",
+    "Html": "<p>Okay, after a bit of googling, I've found the correct syntax to write it to the screen...:</p>\r\n<p>&nbsp;</p>\r\n<p>Response.BinaryWrite([memorystream of pdf].ToArray());<br></p>",
+    "PostedDate": "2009-05-20T03:14:03.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

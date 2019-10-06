@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "817852",
+    "ThreadId": "350672",
+    "Html": "\r\n<p>&quot;System.SystemException: Unknown formatting object ^html&nbsp;&nbsp;&nbsp; at Fonet.FonetDriver.FireFonetError(String message)&nbsp;&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.StartElement(String uri, String localName, Attributes attlist)&nbsp;&nbsp;&nbsp; at\r\n Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)&quot;}</p>\r\n<p>&nbsp;</p>\r\n<p>I am getting the above error msg executing this piece of code:</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'a physical xml file<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dim xmldata As XElement = XElement.Load(Server.MapPath(&quot;~/&quot; &amp; attachmentPath))<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'a physical xsl file<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dim xslfo As String = Server.MapPath(&quot;~/&quot; &amp; &quot;printTemplate/patientGeneralInfo.xslt&quot;)<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'the path for the physical file<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dim outputPath As String = Server.MapPath(&quot;~/ShareInk/outgoing/Application.pdf&quot;)<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'create the pdf<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FonetButler.PDF.Render(xmldata, xslfo, outputPath)</p>\r\n<p>&nbsp;</p>\r\n<p>Any ideas?</p>\r\n",
+    "PostedDate": "2012-03-30T10:18:57.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

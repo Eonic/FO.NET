@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "898274",
+    "ThreadId": "391090",
+    "Html": "\r\n<p>At least one of minimum, optimum, or maximum IPD must be specified on table.<br>\r\n&nbsp;&nbsp; &agrave; Fonet.FonetDriver.FireFonetError(String message)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.Flow.Table.SetIPD(Boolean bHasProportionalUnits, Int32 maxAllocIPD)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.Flow.Table.CalcFixedColumnWidths(Int32 maxAllocationWidth)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.Flow.Table.Layout(Area area)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.Flow.Flow.Layout(Area area, Region region)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.Flow.Flow.Layout(Area area)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.Pagination.PageSequence.Format(AreaTree areaTree)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.StreamRenderer.Render(PageSequence pageSequence)<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.FOTreeBuilder.EndElement()<br>\r\n&nbsp;&nbsp; &agrave; Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)</p>\r\n<p>ces erreurs la m'aparissent lorsque j'utilise fo.net pour transformer mon fichier fo.</p>\r\n<p>qui peut m'aider??</p>\r\n",
+    "PostedDate": "2012-08-10T17:41:06.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

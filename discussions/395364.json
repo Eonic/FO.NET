@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "911965",
+    "ThreadId": "395364",
+    "Html": "\r\n<p>When looking through the code, I notice that the GetDeviceContent ctor calls GetDC(IntPtr.Zero) to get the device context. However, in the Dispose() implementation, DeleteDC() is used to delete the context. Should this actually be ReleaseDC() instead? Seems\r\n dangerous to explicitly delete a seemingly shared resource that wasn't created by FO.NET.</p>\r\n<div id=\"_mcePaste\" style=\"overflow:hidden; height:1px; left:-10000px; top:0px; width:1px\">\r\n&#65279;</div>\r\n",
+    "PostedDate": "2012-09-12T20:22:07.297-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

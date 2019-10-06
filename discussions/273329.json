@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "674753",
+    "ThreadId": "273329",
+    "Html": "\r\n<p>I got the following errors with my fo file:</p>\r\n<p>System.SystemException: System.SystemException: Error in column-width property v<br>\r\nalue 'NaNin': No conversion defined<br>\r\n&nbsp;&nbsp; at Fonet.FonetDriver.FireFonetError(String message)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.PropertyListBuilder.MakeList(String ns, String elementName, Attri<br>\r\nbutes attributes, FObj parentFO)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.StartElement(String uri, String localName, Attribut<br>\r\nes attlist)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)<br>\r\n&nbsp;&nbsp; at Fonet.FonetDriver.FireFonetError(String message)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)<br>\r\n&nbsp;&nbsp; at Fonet.FonetDriver.Render(XmlReader inputReader, Stream outputStream)<br>\r\n&nbsp;&nbsp; at Fonet.FonetDriver.Render(String inputFile, String outputFile)<br>\r\n&nbsp;&nbsp; at ConsoleApplication1.Program.test_2() in c:\\SharpDevelop\\3.0\\Fonet\\Fonet\\Pr<br>\r\nogram.cs:line 78<br>\r\n&nbsp;&nbsp; at ConsoleApplication1.Program.Main(String[] args) in c:\\SharpDevelop\\3.0\\Fon<br>\r\net\\Fonet\\Program.cs:line 31</p>\r\n<p>&nbsp;</p>\r\n<p>The fo file worked just fine by using java fop.jar lib. Is there any work around for FO.NET?</p>\r\n<p>-Henry</p>\r\n",
+    "PostedDate": "2011-09-21T08:12:54.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "685350",
+    "ThreadId": "273329",
+    "Html": "<p>Hi Henry</p>\r\n<p>Can you provide a small sample fo file that demonstrates the problem?</p>\r\n<p>Thanks</p>\r\n<p>Mark</p>",
+    "PostedDate": "2011-10-17T11:52:11.403-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

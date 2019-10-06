@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1497750",
+    "ThreadId": "663617",
+    "Html": "When the FontType = Subset, font-weight=Bold does not work!<br />\n<br />\nHelp Please!!!<br />\n<br />\nSolution : <br />\nRemove all font-family tag from your xslt file, then font-weight will work again<br />\n",
+    "PostedDate": "2017-08-16T09:55:34.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

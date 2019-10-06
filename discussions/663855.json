@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1498205",
+    "ThreadId": "663855",
+    "Html": "Hi,\r<br />\n<br />\nThe pdf is generating with random blank page. example - for the 20 page report - 9th is blank, for 6 page report - 3rd page is blank.\r<br />\nThe input string has all the records that should be printed.\r<br />\nWhat could be the reason for this issue?<br />\n",
+    "PostedDate": "2017-10-06T06:23:00.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

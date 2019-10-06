@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "240301",
+    "ThreadId": "70544",
+    "Html": "<p>Hello,</p>\r\n<p>First thanks for working on this, it's a great component. My question is if percentage in columns is implemented.</p>\r\n<p>I have this fo bits:&nbsp;<span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\">&lt;</span></span><span style=\"font-size:x-small;color:#a31515\"><span style=\"font-size:x-small;color:#a31515\">fo:table-column</span></span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\"> </span></span><span style=\"font-size:x-small;color:#ff0000\"><span style=\"font-size:x-small;color:#ff0000\">column-width</span></span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\">=</span></span><span style=\"font-size:x-small\">&quot;</span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\">32%</span></span><span style=\"font-size:x-small\">&quot;</span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\"> </span></span><span style=\"font-size:x-small;color:#ff0000\"><span style=\"font-size:x-small;color:#ff0000\">column-number</span></span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\">=</span></span><span style=\"font-size:x-small\">&quot;</span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\">1</span></span><span style=\"font-size:x-small\">&quot;</span><span style=\"font-size:x-small;color:#0000ff\"><span style=\"font-size:x-small;color:#0000ff\">/&gt;</span></span></p>\r\n<p><span style=\"color:#000000\">And I'm getting the following exception:</span></p>\r\n<p>System.SystemException: Error in column-width property value '32%': No conversion defined<br>&nbsp;&nbsp; at Fonet.FonetDriver.FireFonetError(String message)<br>&nbsp;&nbsp; at Fonet.Fo.PropertyListBuilder.MakeList(String ns, String elementName, Attributes attributes, FObj parentFO)<br>&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.StartElement(String uri, String localName, Attributes attlist)<br>&nbsp;&nbsp; at Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)</p>\r\n<p>Thanks,</p>\r\n<p>kiumo.</p>",
+    "PostedDate": "2009-09-30T01:42:14.37-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "240311",
+    "ThreadId": "70544",
+    "Html": "<p>I've checked with fixed values like &quot;4cm&quot; and I've also get the exception so is the 'coulumn-width' property the issue?</p>",
+    "PostedDate": "2009-09-30T02:06:26.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "241589",
+    "ThreadId": "70544",
+    "Html": "<p>Try something like this:</p>\r\n<p>&lt;fo:table table-layout=&quot;fixed&quot; border-collapse=&quot;collapse&quot; font-weight=&quot;normal&quot; font-style=&quot;normal&quot; width=&quot;100%&quot; font-size=&quot;10.5pt&quot;&gt;<br>&nbsp;&nbsp; &lt;fo:table-column column-width=&quot;proportional-column-width(50)&quot;/&gt;<br>&nbsp;&nbsp; &lt;fo:table-column column-width=&quot;proportional-column-width(13)&quot;/&gt;<br>&nbsp;&nbsp; &lt;fo:table-column column-width=&quot;proportional-column-width(15)&quot;/&gt;<br>&nbsp;&nbsp; &lt;fo:table-column column-width=&quot;proportional-column-width(22)&quot;/&gt;</p>",
+    "PostedDate": "2009-10-02T22:32:00.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "242207",
+    "ThreadId": "70544",
+    "Html": "<p>Thanks DecMac. This solution works fine.</p>",
+    "PostedDate": "2009-10-05T08:18:59.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

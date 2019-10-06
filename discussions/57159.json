@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "193125",
+    "ThreadId": "57159",
+    "Html": "<p>Hi guys,</p>\r\n<p>is it possible to create PDF/A 1-a documents with FO.net? Some example-code would be great!</p>\r\n<p>Thx in advance.</p>\r\n<p>&nbsp;</p>\r\n<p>JasonX</p>",
+    "PostedDate": "2009-05-22T02:10:02.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199135",
+    "ThreadId": "57159",
+    "Html": "<p>Hi Jason</p>\r\n<p>I am not really up to speed with what a PDF/A 1-a document is - however I am fairly certain that FO.NET does not support them.&nbsp; Can you provide more details regarding this format and what you are wanting to achieve?</p>\r\n<p>Cheers</p>\r\n<p>Mark</p>",
+    "PostedDate": "2009-06-08T10:18:44.343-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199581",
+    "ThreadId": "57159",
+    "Html": "<p>Hi Mark,</p>\r\n<p>thanks for your reply. PDF/A 1-a is a PDF-standard regarding to an ISO-standard. I can give you only the information I found on the Internet:</p>\r\n<p>http://www.pdfa.org/doku.php?id=pdfa:en</p>\r\n<p>http://en.wikipedia.org/wiki/PDF/A</p>\r\n<p>CU</p>\r\n<p>JasonX</p>",
+    "PostedDate": "2009-06-09T09:47:51.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199617",
+    "ThreadId": "57159",
+    "Html": "<p>Hi Jason</p>\r\n<p>I have had a quick read about this and can now confirm that FO.NET cannot be used to create PDF/A 1-a documents.</p>\r\n<p>Since PDF/A 1-a is a subset of PDF 1.4, then it is technically feasible and may not be too big a job.&nbsp; If you try to tackle this yourself and need any pointers then let me know.</p>\r\n<p>Cheers<br>Mark&nbsp;</p>",
+    "PostedDate": "2009-06-09T11:00:49.527-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

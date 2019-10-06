@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "453613",
+    "ThreadId": "215488",
+    "Html": "<p>Anyone else having trouble with text-shadow? I've tried it every which way, and the shadow doesn't render in the PDF.</p>\r\n<p>&lt;fo:inline font-size=&quot;32pt&quot; font-style=&quot;italic&quot; color=&quot;#003300&quot; text-shadow=&quot;#ff6666 10mm 10mm&quot;&gt;<br>&nbsp;&nbsp; Some Text<br>&lt;/fo:inline&gt;</p>\r\n<p>Am I doing something wrong?</p>",
+    "PostedDate": "2010-06-09T10:05:52.533-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "531116",
+    "ThreadId": "215488",
+    "Html": "\r\n<p>Hi - since FO.NET was ported from FOP 0.20.4, I doubt that text-shadow was implemented at that time.</p>\r\n<p>Mark</p>\r\n",
+    "PostedDate": "2010-12-04T06:37:33.2-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

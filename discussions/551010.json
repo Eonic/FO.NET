@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1263908",
+    "ThreadId": "551010",
+    "Html": "I used the following code.  I was not asked with the password when I open the hello.pdf.  Do I need to configure anything else?  Is OwnerPassword meant for the password that will be asked while opening the file?<br />\n<pre><code>        var pdfRenderOptions = new PdfRendererOptions();\n        pdfRenderOptions.Author = &quot;XXXXX&quot;;\n        pdfRenderOptions.Title = &quot;Hello World&quot;;\n        pdfRenderOptions.Subject = &quot;Hello World&quot;;\n        pdfRenderOptions.EnableModify = false;\n        pdfRenderOptions.EnableAdd = false;\n        pdfRenderOptions.EnableCopy = false;\n        pdfRenderOptions.EnablePrinting = true;\n\n        pdfRenderOptions.OwnerPassword = &quot;hello&quot;;\n\n        var driver = FonetDriver.Make();\n        driver.Options = pdfRenderOptions;\n        driver.Render(&quot;hello.fo&quot;, &quot;hello.pdf&quot;);\n        Console.ReadLine();</code></pre>\n\n",
+    "PostedDate": "2014-07-09T02:52:04.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1263918",
+    "ThreadId": "551010",
+    "Html": "Now I am able to get the password popup while opening the pdf file.  Need to set options.UserPassword.  But I dont understand the owner password.  Can anyone give more explanation on OwnerPassword?<br />\n",
+    "PostedDate": "2014-07-09T03:19:07.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

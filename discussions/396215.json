@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "915070",
+    "ThreadId": "396215",
+    "Html": "\r\n<p>I have added Reference to Fonet.dll in Refernce folder.</p>\r\n<p>But Error on build.</p>\r\n<p>&nbsp;The type or namespace name 'Fonet' could not be found (are you missing a using directive or an assembly reference?)</p>\r\n<p>Please help.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-09-20T03:54:48.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

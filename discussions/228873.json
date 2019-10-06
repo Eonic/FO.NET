@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "499508",
+    "ThreadId": "228873",
+    "Html": "<p>I have followed a tutorial on how to add footer to the document, and it worked in FOP, but in FO.NET the document body overlaps the footer and I can't apply margin to the body to fix it.</p>\r\n<p>This is the footer part I used:</p>\r\n<p>&lt;fo:static-content flow-name=&quot;xsl-region-after&quot;&gt;&lt;fo:table space-before=&quot;0.3in&quot; table-layout=&quot;fixed&quot; inline-progression-dimension.optimum=&quot;100%&quot;&gt;&lt;fo:table-column/&gt;&lt;fo:table-column/&gt;&lt;fo:table-column/&gt;&lt;fo:table-body&gt;&lt;fo:table-row&gt;&lt;fo:table-cell&gt;&lt;fo:block&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {copyright-info}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/fo:block&gt;&lt;/fo:table-cell&gt;&lt;fo:table-cell&gt;&lt;fo:block&gt;{image-here}&lt;/fo:block&gt;&lt;/fo:table-cell&gt;&lt;fo:table-cell&gt;&lt;fo:block text-align=&quot;right&quot;&gt;&lt;fo:page-number/&gt;/&lt;fo:page-number-citation ref-id=&quot;last-page&quot;/&gt;&lt;/fo:block&gt;&lt;/fo:table-cell&gt;&lt;/fo:table-row&gt;&lt;/fo:table-body&gt;&lt;/fo:table&gt;&lt;/fo:static-content&gt;</p>",
+    "PostedDate": "2010-09-28T08:20:02.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "531111",
+    "ThreadId": "228873",
+    "Html": "\r\n<p>Hi</p>\r\n<p>I don't have a solution, but it is worth noting the FO.NET was based on FOP version 0.20.4.&nbsp; Since that version FOP may have had many layout improvements which could explain why the tutorial does not work in FO.NET.</p>\r\n<p>Mark</p>\r\n",
+    "PostedDate": "2010-12-04T06:29:17.253-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

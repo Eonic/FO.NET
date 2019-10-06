@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1207359",
+    "ThreadId": "531528",
+    "Html": "Hi, I am using FONET in a medium trust shared hosting environment, I have recompiled the assembly to use the [assembly: AllowPartiallyTrustedCallers] attribute, but I still seem to getting System.Security.Permissions.FileIOPermission exceptions.  I have started to trim out things in the code that would access the directory but this did not seem like the best solution, as I ran into it trying to get the system fonts, and those I will need.  I am hosting it on hostgator.com, (not my choice) but seems fine enough until I ran into this issue. Does anyone have any suggestions here?<br />\n",
+    "PostedDate": "2014-02-12T07:48:13.55-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

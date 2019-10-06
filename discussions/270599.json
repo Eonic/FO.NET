@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "664121",
+    "ThreadId": "270599",
+    "Html": "\r\n<p>I need to embed an external document</p>\r\n<p>FO extention support<strong> fox:external-document</strong></p>\r\n<p>I am getting &nbsp;system exception when fire fonet.</p>\r\n<p>Does anyone know if extensions are supported?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>\r\n<p>Eran</p>\r\n",
+    "PostedDate": "2011-08-26T16:18:06.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "685351",
+    "ThreadId": "270599",
+    "Html": "<p>Hi Eran</p>\r\n<p>FO.NET does not support the fox extensions. I don't think there is any way that you can embed external documents without chaning the FO.NET code.</p>\r\n<p>Mark</p>",
+    "PostedDate": "2011-10-17T11:54:14.403-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

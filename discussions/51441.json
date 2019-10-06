@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "172487",
+    "ThreadId": "51441",
+    "Html": "Hi,<br>\r\n<br>\r\nCongratulations for the initiative of create a component .NET for PDF's creation by XSL-FO, but i have a problem.<br>\r\nIn first call to your component, is giving a exception &quot;System.ArithmeticException&quot;, for burst of arithmetic operation.<br>\r\n<br>\r\nTks for attention!!!<br>\r\n<br>\r\nAnderson Lopes \r\n",
+    "PostedDate": "2009-03-26T13:25:31.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "199146",
+    "ThreadId": "51441",
+    "Html": "<p>Hi</p>\r\n<p>Did you manage to resolve this issue?&nbsp; If not, then feel free to provide more information and I will help if possible.</p>\r\n<p>Cheers</p>\r\n<p>Mark</p>",
+    "PostedDate": "2009-06-08T10:28:49.777-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "988089",
+    "ThreadId": "429894",
+    "Html": "\r\n<p>Hi, I have just created a web site app that uses FO.NET and it is extreamly slow and does hardly work. I got it to work once and the it seems like the CPU goes out the roof.</p>\r\n<p>&nbsp;</p>\r\n<p>Any ideas on how / if it should work on Azure?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>\r\n<p>Rob</p>\r\n",
+    "PostedDate": "2013-01-17T04:59:22.75-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "989095",
+    "ThreadId": "429894",
+    "Html": "\r\n<p>It works in Web Role but not in Website. I have also located the problem to the loading of the system fonts, maybe PINVOKE on native code.</p>\r\n",
+    "PostedDate": "2013-01-19T04:43:22.143-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

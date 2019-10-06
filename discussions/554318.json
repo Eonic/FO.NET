@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1278117",
+    "ThreadId": "554318",
+    "Html": "I have a fo block with an embedded image. but while running the code i am getting exception like this\r<br />\n<br />\n<strong>my fo block</strong>\r<br />\n<br />\n&lt;fo:block&gt;\r<br />\n&lt;fo:inline&gt;\r<br />\n&lt;fo:external-graphic src=&quot;url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/')&quot;/&gt;\r<br />\n&lt;/fo:external-graphic&gt;\r<br />\n&lt;/fo:inline&gt;\r<br />\n&lt;/fo:block&gt;\r<br />\n<br />\n<strong>Exception I am getting</strong>\r<br />\n<br />\nSystem.SystemException: Error while creating area : Encountered unexpected exception while fetching image from data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYE.../<em>imagedata</em>/\r<br />\nThe URI prefix is not recognized.\r<br />\n   at Fonet.FonetDriver.FireFonetError(String message)\r<br />\n   at Fonet.Fo.Flow.ExternalGraphic.Layout(Area area)\r<br />\n   at Fonet.Fo.FObjMixed.Layout(Area area)\r<br />\n   at Fonet.Fo.Flow.Block.Layout(Area area)\r<br />\n   at Fonet.Fo.Flow.Block.Layout(Area area)\r<br />\n   at Fonet.Fo.Flow.Flow.Layout(Area area, Region region)\r<br />\n   at Fonet.Fo.Flow.Flow.Layout(Area area)\r<br />\n   at Fonet.Fo.Pagination.PageSequence.Format(AreaTree areaTree)\r<br />\n   at Fonet.StreamRenderer.Render(PageSequence pageSequence)\r<br />\n   at Fonet.Fo.FOTreeBuilder.EndElement()\r<br />\n   at Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)\r<br />\n<br />\nHo to solve this? how i can embed an image using FO.NET?<br />\n",
+    "PostedDate": "2014-07-27T04:19:18.963-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1468434",
+    "ThreadId": "554318",
+    "Html": "Hi \r<br />\nI am new in this forum, but would be very happy if anyone has found a solution to this issue, as I am facing the exact same.<br />\n",
+    "PostedDate": "2016-03-30T06:37:22.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1468535",
+    "ThreadId": "554318",
+    "Html": "I anyone else finds this discussion I have found an answer. \r<br />\nFO.NET does not support this out of the box, but can be handled by writing our own image handler for the FonetDriver:\r<br />\n<br />\n//add our own imageHandler<br />\n<pre><code>        var driver = FonetDriver.Make();\n        driver.ImageHandler = ImageHandler;\n        driver.Render(foReader, pdfStream);\n</code></pre>\n\n//the ImageHandler, takes base64 encoded image data (i.e. without the prefix part data:image/jpeg;base64,)<br />\n<pre><code>    private static byte[] ImageHandler(string imageString)\n    {\n        return Convert.FromBase64String(imageString);\n    }</code></pre>\n\n",
+    "PostedDate": "2016-03-31T02:46:51.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

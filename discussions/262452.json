@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "631646",
+    "ThreadId": "262452",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I am getting the following error when trying to generate PDF from fo file</p>\r\n<p>System.OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown.<br>\r\n&nbsp;&nbsp; at Fonet.Fo.PropertyMaker.Make(PropertyList propertyList, String value, FObj fo)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.Properties.GenericCondLength.MakeCompound(PropertyList pList, FObj fo)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.Properties.GenericCondLength.ConvertProperty(Property p, PropertyList pList, FObj fo)<br>\r\n&nbsp;&nbsp; at Fonet.Fo.Properties.PaddingStartMaker.Compute(PropertyList propert)</p>\r\n",
+    "PostedDate": "2011-06-22T23:53:04.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "652911",
+    "ThreadId": "262452",
+    "Html": "<p>Hello. Please can you supply an example? It may be that you just have a very long running page sequence (these don't work well with the rendering engine, since the whole page sequence is kept in memory). Or it may be that you have found a bug.</p>",
+    "PostedDate": "2011-08-05T01:46:38.367-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1298586",
+    "ThreadId": "565078",
+    "Html": "I am getting this exception when trying to generate a PDF file using FO.NET:<br />\n<pre><code>System.Exception: Unable to retrieve unicode ranges.\n    at Fonet.Pdf.Gdi.GdiUnicodeRanges.LoadRanges(GdiDeviceContent dc)</code></pre>\n\nThe interesting thing is that it only happens on Windows Azure with an update called Windows Server RemoteFX VM Components.<br />\n<br />\nHas anyone seen this and knows a fix or a workaround other than manually uninstalling this update all the time?<br />\n",
+    "PostedDate": "2014-09-03T07:04:41.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

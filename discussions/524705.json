@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1195742",
+    "ThreadId": "524705",
+    "Html": "System.Exception: Failed to load data for font Arial ---&gt; System.Exception: Failed to retrieve table data for font Arial\r<br />\nat Fonet.Pdf.Gdi.GdiFontMetrics.ReadFont()\r<br />\nat Fonet.Pdf.Gdi.GdiFontMetrics.GetFontData()\r<br />\n--- End of inner exception stack trace ---\r<br />\nat Fonet.Pdf.Gdi.GdiFontMetrics.GetFontData()\r<br />\nat Fonet.Pdf.Gdi.GdiFontMetrics..ctor(GdiDeviceContent dc, GdiFont currentFont)\r<br />\nat Fonet.Pdf.Gdi.GdiFont.CreateDesignFont(String faceName, Boolean bold, Boolean italic, GdiDeviceContent dc)\r<br />\nat Fonet.Render.Pdf.Fonts.TrueTypeFont.ObtainFontMetrics()\r<br />\nat Fonet.Render.Pdf.Fonts.ProxyFont.LoadIfNecessary()\r<br />\nat Fonet.Render.Pdf.Fonts.ProxyFont.get_Ascender()\r<br />\nat Fonet.Layout.LineArea..ctor(FontState fontState, Int32 lineHeight, Int32 halfLeading, Int32 allocationWidth, Int32 startIndent,\r<br />\nInt32 endIndent, LineArea prevLineArea)\r<br />\nat Fonet.Layout.BlockArea.start()\r<br />\nat Fonet.Fo.Flow.Block.Layout(Area area)\r<br />\nat Fonet.Fo.Flow.TableCell.Layout(Area area)\r<br />\nat Fonet.Fo.Flow.TableRow.Layout(Area area)\r<br />\nat Fonet.Fo.Flow.AbstractTableBody.Layout(Area area)\r<br />\nat Fonet.Fo.Flow.Table.Layout(Area area)\r<br />\nat Fonet.Fo.Flow.Flow.Layout(Area area, Region region)\r<br />\nat Fonet.Fo.Flow.Flow.Layout(Area area)\r<br />\nat Fonet.Fo.Pagination.PageSequence.Format(AreaTree areaTree)\r<br />\nat Fonet.StreamRenderer.Render(PageSequence pageSequence)\r<br />\nat Fonet.Fo.FOTreeBuilder.EndElement()\r<br />\nat Fonet.Fo.FOTreeBuilder.Parse(XmlReader reader)\r<br />\n<br />\nHello, I get this erro when I try to generate pdf.\r<br />\nMy environment consists of a load balancing with four computers, but the error happens only on one computer. What can be happening?\r<br />\n<br />\nThanks!!!\r<br />\nFabio<br />\n",
+    "PostedDate": "2014-01-24T08:59:55.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

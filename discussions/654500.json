@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1472966",
+    "ThreadId": "654500",
+    "Html": "But I don't like tags:\r<br />\n1.&lt;fo:inline border-style=&quot;solid&quot; border-width=&quot;0.25pt&quot; padding=&quot;2pt 3pt 1pt 3pt&quot;&gt;X&lt;/fo:inline&gt;<br />\n<pre><code>X must be in the frame, but no frame</code></pre>\n\n<ol>\n<li>\n&lt;fo:leader leader-length=&quot;18.5cm&quot; border-width=&quot;0.25pt&quot; border-bottom-style=&quot;dotted&quot; /&gt;<br />\nThere should be a dotted line, but it is also there in PDF.<br />\n</li>\n</ol>\nTell me, please what could be the problem.<br />\n",
+    "PostedDate": "2016-05-10T02:59:53.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1473581",
+    "ThreadId": "654500",
+    "Html": "Tell me, please, what may be related problems<br />\n",
+    "PostedDate": "2016-05-16T02:47:47.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1064306",
+    "ThreadId": "449008",
+    "Html": "Hello,<br />\n<br />\nI am currently searching for a .NET based report generation solution (e.g. XML as input to create PDF). <br />\n<br />\nNow I saw FO.NET which allowes to create PDFs from XSL-FO files.<br />\nThis seems a good solution for me.<br />\n<br />\nBut then I saw that the last release is from 2009 - already a long time ago.<br />\n<br />\nTherefore I have some questions:<br />\n<ol>\n<li>Is there someone using FO.NET in .NET 4.5 appliactions?</li>\n<li>Is there someone using FO.NET at Win7 64 bit?</li>\n<li>\nAny one with experience creating pdf with more than 100 pages? <br />\nLargely all pages just contains tables (equal format, just other labels and numbers)\n</li>\n<li>\nAny reasons to use or to avoid FO.NET?<br />\n</li>\n</ol>\nThanks a lot,<br />\n<br />\nstefan<br />\n",
+    "PostedDate": "2013-07-03T14:28:51.397-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1064409",
+    "ThreadId": "449008",
+    "Html": "Hi Stefan\r<br />\n<br />\nFONET is not being actively developed. There have been a couple of forks to github - so it might be worthwhile searching for them and seeing how active they have been.\r<br />\n<br />\nThe history page (<a href=\"http://fonet.codeplex.com/wikipage?title=History\" rel=\"nofollow\">http://fonet.codeplex.com/wikipage?title=History</a>) gives you a bit of background. Basically, I just don't have time to continue working on the project. This is a shame, because it is a fun bit of software to work on!\r<br />\n<br />\nThere is some p/invoke code for working with Windows font metrics - this could cause some problems in 64 bit land. You could compare the signatures used with those over at pinvoke.net.\r<br />\n<br />\nWe used to use FONET to create documents with thousands of pages. The limitation is the size of each fo:page-sequence, since the each page-sequence is laid out in memory. So if you have a single page-sequence with a hundred plus pages, then you will probably run out of memory or suffer poor performance. If you have a large document with lots of short page-sequences (&lt; 20 pages), then memory usage will be constant and the size of the document could be thousands of pages.\r<br />\n<br />\nHope this helps.\r<br />\nMark<br />\n",
+    "PostedDate": "2013-07-04T00:14:51.067-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1064702",
+    "ThreadId": "449008",
+    "Html": "Hi Mark,\r<br />\n<br />\nthanks for your fast reply. I will check for forks maybe I find a nice one.\r<br />\n<br />\nI understand completely that you don't have the time to continue the work on the project. A reason more that I am very happy related to your fast response.\r<br />\n<br />\nYesterday, I downloaded several example fo-files (because I have no experience of writing them by myself) and tried to use them with your binary package.\r<br />\nIt seems that most of these examples can't be processed without problems. A reason could be that these examples using some &quot;power&quot; / modern features of fo which are not supported by your release.\r<br />\n<br />\nNevertheless because our application is very well defined the absolute feature-set is in general no problem. We just have to check that the required features are supported.\r<br />\nWe will do this in the next days. Maybe there is also a fork based on your work which solved already an issue.\r<br />\n<br />\nRelated to 64bit:\r<br />\nGood to know but related to you answer it seems that there are just some p/invokes to change. This should not be a big deal.\r<br />\n<br />\nThanks a lot,\r<br />\n<br />\nStefan<br />\n",
+    "PostedDate": "2013-07-04T14:56:00.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "729723",
+    "ThreadId": "287172",
+    "Html": "\r\n<p>Can I use emf images with FONET?</p>\r\n<p>I would like to render emf images using external-graphic tag,</p>\r\n<p>But I am getting exception while running following is code,</p>\r\n<p>&lt;fo:external-graphic height=&quot;20mm&quot; &nbsp;content-width=&quot;57mm&quot; content-type=&quot;image/emf&quot; &gt;</p>\r\n<p><span style=\"white-space:pre\"></span>&lt;xsl:attribute name=&quot;src&quot;&gt;<span> </span>\r\n</p>\r\n<p><span style=\"white-space:pre\"></span>&lt;xsl:value-of select=&quot;Logo&quot;/&gt;<span>\r\n</span></p>\r\n<p><span style=\"white-space:pre\"></span>&lt;/xsl:attribute&gt;<span> </span></p>\r\n<p>&lt;/fo:external-graphic&gt;<span> </span></p>\r\n<p><span>Where 'Logo' is the URL of the emf image.</span></p>\r\n<p>It says content-type is invalid attribute!!</p>\r\n",
+    "PostedDate": "2012-01-23T21:57:56.333-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
