@@ -5,6 +5,9 @@
 - daniiiol added some bugfixing and pushed it to NuGet (Id: Fonet.Core)
 - eonic added some missing files to the wiki
 
+- as used for PDF generation in ProteanCMS https://github.com/Eonic/ProteanCMS
+
+
 license: Apache2
 
 wiki: https://github.com/Eonic/FO.NET/wiki
