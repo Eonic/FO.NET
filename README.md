@@ -10,4 +10,4 @@ license: Apache2
 wiki: https://github.com/Eonic/FO.NET/wiki
 
 ---
-see new development at https://github.com/PaintLab/SaveAsPdf
+see alternative development at https://github.com/PaintLab/SaveAsPdf
